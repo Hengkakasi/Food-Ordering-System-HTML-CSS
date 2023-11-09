@@ -1,0 +1,271 @@
+/*Home Page*/
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(0, 57, 150);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Ensure it's above other content */
+    /* Other styles for header */
+}
+header a {
+text-decoration: none;
+list-style-type: none;
+color: aliceblue;
+font-size: 20px;
+
+}
+
+header a:hover{
+    color: red;
+}
+header ul{
+    position: absolute;
+    right:5vw;
+    top: 16px;
+    line-height: 30px;
+}
+header li{
+    display: inline;
+    margin-right:4vw;
+    
+}
+header h1{
+    position: absolute;
+    left:120px;
+    top: 20px;
+    line-height: 20px;
+    color: aliceblue;
+}
+.fa {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+.homepage img{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 60px;
+    opacity: 0.3;
+}
+
+.homepage .content{
+    text-align: center;
+    
+}
+.homepage .content a{
+    color: rgb(201, 32, 100);
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    
+    border: 3px solid ;
+    border-radius: 4px;
+    padding:10px 20px;
+    position: absolute;
+  top: 500px; /* Adjust this value to position the link below the text */
+  left: 50%; /* Center the link horizontally */
+  transform: translateX(-50%); /* Offset the link by half of its width */
+
+}
+
+.homepage .content a:hover{
+    color: rgb(255, 234, 0);
+}
+.homepage .text{
+    color: aliceblue;
+    position: absolute;
+    top: 320px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+.homepage .text h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: rgba(84, 60, 218, 0.8); /* Add a slight transparency to make the text more legible against the image background */
+    text-shadow: 2px 2px 5px rgba(2, 143, 61, 0.8);
+}
+.homepage .text p{
+    margin: 25px 0;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8); /* Add a slight transparency to make the text more legible against the image background */
+}
+
+
+/*menu*/
+body{
+    background-color: #F0F0F0;
+}
+.categories{
+    margin: 150px 0 0 100px;
+    line-height: 70px;
+   
+}
+
+.menu .categories a{
+    padding:10px 20px;
+}
+.categories ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.categories ul li{
+    list-style-type: none;
+    position: relative; /* Use relative positioning */
+    top: -15px; /* Adjust this value to move the text upward */
+}
+.categories ul{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.categories li{
+    display: inline;
+    margin:0;
+}
+.categories {
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+    top: 60px; /* Adjust this value to maintain the position of .categories */
+    border-radius: 0 0 30px 30px;
+}
+.categories a:hover{
+    color: rgb(217, 255, 0);
+}
+
+.product{
+    margin: 0;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 180px 80px;
+    
+}
+.product div{
+    width: 300px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border-radius: 25px 25px;
+    padding-bottom: 10px;
+}
+.product img{
+    width: 100%;
+    border-radius: 10px;
+}
+.product p{
+    font-size: 20px;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+.product a{
+    text-decoration: none;
+}
+.wrapper{
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    width: 12%;
+    margin: 0;
+    margin: 6px 0 0 15px;
+    max-height: 40px; /* Set a maximum height for the .wrapper */
+    justify-content: center; /* Center the elements horizontally */
+    align-items: center; /* Center the elements vertically */
+ }
+ .wrapper img{
+    width: 100%;
+ }
+ .wrapper div {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+    cursor: pointer;
+    display: inline-block; /* Make the divs inline-block elements */
+    vertical-align: middle; /* Vertically center the content */
+    width: 50%; /* Set the desired width for the divs */
+}
+
+.quantity{
+    display: flex;
+
+}
+
+.ProductInfo{
+    line-height: 3em;
+    font-weight: bold;
+    padding: 15px; /* Increase padding to make the background larger */
+  
+}
+
+.cart{
+    background:  rgb(0, 57, 150);
+    color: aliceblue;
+    padding: 10px 14px;
+    border-radius:5px ;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.cart-hover button:hover{
+    background-color: #0069d9;
+}
+
+.ProductDetails{
+    display: flex;
+    margin: 150px 0 0 80px;
+    font-size: 17px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.ProductDetails img {
+    width: 600px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    border-radius: 100px;
+    margin-left: 20px;
+}
+
+.ProductInfo{
+    margin-left: 100px;
+}
+.return button {
+    background-color:  rgb(0, 57, 150);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0;
+    margin: -60px 0 0 80px;
+    position: absolute;
+    border-radius: 50px 0 0 50px;
+  }
+  
+ .return button:hover {
+    background-color: #0069d9;
+  }
+  
+

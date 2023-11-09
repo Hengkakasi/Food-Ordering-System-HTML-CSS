@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CREME CARAMEL</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+<body>
+    <header>
+        <h1>Halfday</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fa fa-home"></i><strong>Home</strong></a></li>
+                <li><a href="menu.html"><i class="fa fa-cutlery"></i><strong>Menu</strong></a></li>
+                <li><a href="#"><i class="fa fa-info-circle"></i><strong>About</strong></a></li>
+            </ul>            
+        </nav>
+    </header>
+    <div class="return">
+        <a href="menu.html"><button> <i class="fa fa-angle-left"></i>Return to Menu</button></a>
+    </div>
+    <div class="ProductDetails">
+        <img src="CREME CARAMEL.jpg" alt="FRENCH ONION">
+        <div class="ProductInfo">
+            <h1>CREME CARAMEL</h1>
+            <h3><span style="color: rgb(4, 4, 172);">Ingredients: </span>Milk, Vanilla, Eggs, Granulated Sugar</h3>
+            <p>Product Code: &nbsp;<span >28490</span></p>
+            <p>Availability: <span style="color:  rgb(2, 118, 213);">In Stock</span></p>
+            <p><strong> <span style="font-size: 22px; color: rgb(2, 163, 2);" >Price: RM5.25</span></strong></p>
+            <label for="size-product">Choose Size:</label>
+            <select id="size-product">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+            
+            <div class="quantity">
+            <p>Quantity: </p>
+            <div class="wrapper">
+                <div class="minus">-</div>
+                <div class="number">1</div>
+                <div class="plus">+</div>
+            </div>            
+            </div>
+            <div class="cart-hover">
+                <a href="#"><button class="cart">Add to Cart</button></a>
+            </div>
+        </div>
+    </div>    
+    <script>
+        const plus = document.querySelector(".plus"),
+        minus = document.querySelector(".minus"),
+        number = document.querySelector(".number")
+
+        let a= 1;
+
+        plus.addEventListener("click",()=>{
+            a++;
+            number.innerText = a;
+        })
+
+        minus.addEventListener("click",()=>{
+            a--;
+            number.innerText = a;
+        })
+    </script>
+
+</body>
+</html>
